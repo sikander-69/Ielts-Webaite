@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #FFFFFF;
+    --heading-blue: #001475;
+    --subheading-red: #e00000;
+  }
+  
+  html {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #FFFFFF;
+    color: #1E293B;
+    scroll-behavior: smooth;
+  }
+  
+  /* Main Headings & Titles -> Mid Night Blue */
+  h1, h2, .main-title {
+    font-family: 'Outfit', sans-serif;
+    color: #001475;
+    letter-spacing: -0.02em;
+  }
+  
+  /* Sub Headings & Subtitles -> Racing Red */
+  h3, h4, .sub-heading {
+    font-family: 'Outfit', sans-serif;
+    color: #e00000;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Executive Minimal Design System */
+.sleek-card {
+  background: #FFFFFF;
+  border: 1px solid #F1F5F9;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px -5px rgba(0, 20, 117, 0.05);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sleek-card:hover {
+  border-color: #E2E8F0;
+  box-shadow: 0 20px 40px -10px rgba(0, 20, 117, 0.1);
+  transform: translateY(-2px);
+}
+
+.sleek-nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid #F1F5F9;
+  box-shadow: 0 4px 20px -2px rgba(0, 20, 117, 0.04);
+}
+
+/* Racing Red Primary Button */
+.btn-primary {
+  background-color: #e00000;
+  color: #FFFFFF;
+  font-weight: 700;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary:hover {
+  background-color: #b80000;
+  box-shadow: 0 8px 25px -4px rgba(224, 0, 0, 0.35);
+  transform: translateY(-1px);
+}
+
+/* Mid Night Blue Secondary Button */
+.btn-secondary {
+  background-color: #001475;
+  color: #FFFFFF;
+  font-weight: 700;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-secondary:hover {
+  background-color: #000c47;
+  box-shadow: 0 8px 25px -4px rgba(0, 20, 117, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Outline Button */
+.btn-outline {
+  background-color: #FFFFFF;
+  border: 1.5px solid #E2E8F0;
+  color: #001475;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  border-color: #e00000;
+  color: #e00000;
+  background-color: #FFF0F0;
+}
+
+/* Subtle Background Gradient Accents */
+.bg-gradient-soft {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 20, 117, 0.04) 0%, rgba(224, 0, 0, 0.02) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* Custom Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #DC2626;
+}
